@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://gi3xvjbg8723"]
+
+[ext_resource type="Script" uid="uid://cijembugsv42j" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="Control" type="Control" unique_id=876018621]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_06t4h")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=877549573]
+layout_mode = 0
+offset_right = 1048.0
+offset_bottom = 227.0
+placeholder_text = "Введите ваше имя:"
+
+[node name="Button" type="Button" parent="." unique_id=1516736318]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 30.0
+offset_right = 259.0
+offset_bottom = 85.0
+text = "Начать игру"

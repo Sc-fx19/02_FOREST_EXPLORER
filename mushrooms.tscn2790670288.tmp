@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bytf17vsky466"]
+
+[ext_resource type="Script" uid="uid://b7vy01pmgiv1n" path="res://mushrooms.gd" id="1_8gl68"]
+[ext_resource type="Texture2D" uid="uid://58e1735t3nol" path="res://sprite.png" id="2_ccqf2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4x5m8"]
+
+[node name="Mushrooms" type="Area2D" unique_id=1725805217]
+script = ExtResource("1_8gl68")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=535242936]
+position = Vector2(0, 0.49999857)
+scale = Vector2(1, 0.9791667)
+texture = ExtResource("2_ccqf2")
+region_enabled = true
+region_rect = Rect2(2.6728516, 16.287039, 12.968269, 13.66926)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1299531489]
+shape = SubResource("CircleShape2D_4x5m8")
+
+[node name="Label" type="Label" parent="." unique_id=2117629816]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

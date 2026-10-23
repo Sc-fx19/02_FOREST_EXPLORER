@@ -1,0 +1,32 @@
+[gd_resource type="TileSet" format=3 uid="uid://boslcfe2kfm00"]
+
+[ext_resource type="Texture2D" uid="uid://58e1735t3nol" path="res://sprite.png" id="1_e3020"]
+[ext_resource type="PackedScene" uid="uid://dejatgxv1470g" path="res://camp.tscn" id="2_ujgj0"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ujgj0"]
+texture = ExtResource("1_e3020")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+1:1/size_in_atlas = Vector2i(2, 1)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11.241172, -7.5540657, 10.162018, -7.01449, 11.780746, 7.3742085, -14.29877, 7.733927)
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_02c43"]
+scenes/1/scene = ExtResource("2_ujgj0")
+
+[resource]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ujgj0")
+sources/1 = SubResource("TileSetScenesCollectionSource_02c43")
